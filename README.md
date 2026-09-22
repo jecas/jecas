@@ -43,25 +43,28 @@ Pytest · Unit Testing · Integration Testing · BDD
 
 ## 🚀 Featured Projects
 
-### FastAPI Production API
+### [SubFlow — Subscription Management API](https://github.com/jecas/subflow)
 
-Production-style backend application demonstrating how I structure and build modern Python APIs.
+Production-style asynchronous backend for managing customers, plans, subscriptions, and payments.
 
-**Stack:** Python · FastAPI · PostgreSQL · Redis · SQLAlchemy · Docker · Pytest
+**Stack:** Python 3.12 · FastAPI · PostgreSQL · SQLAlchemy · Redis · Alembic · Docker · Pytest
 
-Features include:
+**Highlights:**
 
-* Async API
-* Authentication and authorization
-* PostgreSQL persistence
-* Redis caching
-* Request validation
-* Structured error handling
-* Automated tests
-* Docker development environment
-* CI pipeline
+* Async FastAPI and SQLAlchemy architecture
+* JWT authentication and role-based authorization
+* Subscription lifecycle management
+* Calendar-aware monthly and yearly billing periods
+* Redis cache-aside strategy
+* Payment provider abstraction
+* Idempotent payment processing using `Idempotency-Key`
+* Protected payment webhooks with duplicate-event handling
+* Alembic database migrations
+* Structured JSON logging and request IDs
+* Unit and integration tests
+* GitHub Actions CI with migration validation and Docker build
 
-`Coming soon`
+👉 [View SubFlow on GitHub](https://github.com/jecas/subflow)
 
 ---
 
