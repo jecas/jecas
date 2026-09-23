@@ -22,22 +22,7 @@ AWS · Docker · GitHub Actions · CI/CD
 
 **Testing**
 
-Pytest · Unit Testing · Integration Testing · BDD
-
----
-
-## 💻 What I Can Help With
-
-* Python backend development
-* FastAPI applications and microservices
-* REST and gRPC API development
-* Third-party API integrations
-* Async Python services
-* Existing Python application debugging
-* API performance and reliability improvements
-* AWS-based backend applications
-* Redis and RabbitMQ integrations
-* Automated testing and CI/CD
+Pytest · Unit Testing · Integration Testing · End-to-End Testing · BDD
 
 ---
 
@@ -68,26 +53,30 @@ Production-style asynchronous backend for managing customers, plans, subscriptio
 
 ---
 
-### Async API Integration Service
+### [RelayForge — Resilient API Integration Service](https://github.com/jecas/relayforge)
 
-Backend service demonstrating a multi-step integration with an external API.
+Asynchronous integration service demonstrating resilient communication with external API providers through different authentication and request flows.
 
-The service handles:
+**Stack:** Python 3.12 · FastAPI · HTTPX · PostgreSQL · SQLAlchemy · Alembic · Docker · Pytest
 
-`Authorization → Token → Provider API → Response Mapping`
+**Highlights:**
 
-Including:
+* Provider abstraction with multiple external integrations
+* Multi-step `authorize → token → verify` provider flow
+* API-key-based provider integration
+* Async HTTP communication with HTTPX
+* Configurable timeouts and retry handling
+* Exponential retry delay and `Retry-After` support
+* Provider error normalization
+* Correlation ID generation and propagation
+* Structured JSON logging
+* PostgreSQL verification audit persistence
+* Mock external provider for realistic testing
+* Unit, integration, and full-stack E2E tests
+* Docker Compose environment
+* GitHub Actions CI with migration and Docker validation
 
-* async HTTP communication
-* timeouts
-* retries
-* provider error mapping
-* correlation IDs
-* structured logging
-* provider mocks
-* unit and integration tests
-
-`Coming soon`
+👉 [View RelayForge on GitHub](https://github.com/jecas/relayforge)
 
 ---
 
@@ -95,13 +84,28 @@ Including:
 
 Event-driven backend demonstrating asynchronous processing using RabbitMQ.
 
-**Architecture:**
+**Planned architecture:**
 
 `FastAPI → RabbitMQ → Worker → PostgreSQL / Redis → External API`
 
-Includes retry handling, idempotency, background processing, caching, and automated testing.
+Planned features include retry handling, idempotency, background processing, caching, and automated testing.
 
 `Coming soon`
+
+---
+
+## 💻 What I Can Help With
+
+* Python backend development
+* FastAPI applications and microservices
+* REST and gRPC API development
+* Third-party API integrations
+* Async Python services
+* Existing Python application debugging
+* API performance and reliability improvements
+* AWS-based backend applications
+* Redis and RabbitMQ integrations
+* Automated testing and CI/CD
 
 ---
 
