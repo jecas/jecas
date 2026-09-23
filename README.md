@@ -88,7 +88,7 @@ Reliable asynchronous event-processing service built around RabbitMQ and backgro
 - Durable exchanges and queues
 - Delayed retry queue with automatic redelivery
 - Dead-letter queue for exhausted retries
-- Redis-based idempotent processing
+- Redis-based event deduplication
 - PostgreSQL event lifecycle persistence
 - External service integration with HTTPX
 - Correlation ID propagation and structured logging
