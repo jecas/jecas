@@ -142,7 +142,7 @@ Web applications · Booking systems · Business websites · Desktop applications
 
 ---
 
-## 🤝 Available for Freelance Projects
+## 🤝 Open to Freelance & Backend Opportunities
 
 I'm available for selected freelance projects involving:
 
