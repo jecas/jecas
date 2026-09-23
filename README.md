@@ -2,15 +2,17 @@
 
 ### Python Backend Engineer
 
-I build reliable backend services, APIs, third-party integrations, and cloud-based applications using Python.
+I build reliable backend services, APIs, third-party integrations, and event-driven systems using Python.
 
-My main focus is backend engineering — designing APIs, integrating external services, working with asynchronous systems, and building maintainable production-ready applications.
+My focus is backend engineering: designing maintainable APIs, integrating external services, building asynchronous and distributed workflows, and developing production-style applications with strong testing and observability.
+
+---
 
 ## 🛠 Tech Stack
 
 **Backend**
 
-Python · FastAPI · REST APIs · gRPC · AsyncIO · Pydantic
+Python · FastAPI · REST APIs · gRPC · AsyncIO · Pydantic · SQLAlchemy
 
 **Data & Messaging**
 
@@ -18,7 +20,7 @@ PostgreSQL · Redis · RabbitMQ
 
 **Cloud & DevOps**
 
-AWS · Docker · GitHub Actions · CI/CD
+AWS · Docker · Docker Compose · GitHub Actions · CI/CD
 
 **Testing**
 
@@ -32,80 +34,99 @@ Pytest · Unit Testing · Integration Testing · End-to-End Testing · BDD
 
 Production-style asynchronous backend for managing customers, plans, subscriptions, and payments.
 
-**Stack:** Python 3.12 · FastAPI · PostgreSQL · SQLAlchemy · Redis · Alembic · Docker · Pytest
+**Python 3.12 · FastAPI · PostgreSQL · Redis · SQLAlchemy · Alembic · Docker**
 
-**Highlights:**
+**Highlights**
 
-* Async FastAPI and SQLAlchemy architecture
-* JWT authentication and role-based authorization
-* Subscription lifecycle management
-* Calendar-aware monthly and yearly billing periods
-* Redis cache-aside strategy
-* Payment provider abstraction
-* Idempotent payment processing using `Idempotency-Key`
-* Protected payment webhooks with duplicate-event handling
-* Alembic database migrations
-* Structured JSON logging and request IDs
-* Unit and integration tests
-* GitHub Actions CI with migration validation and Docker build
+- JWT authentication and role-based authorization
+- Subscription lifecycle and calendar-aware billing periods
+- Redis cache-aside strategy
+- Payment provider abstraction
+- Idempotent payment processing with `Idempotency-Key`
+- Protected webhooks with duplicate-event handling
+- Structured JSON logging and request IDs
+- Unit and integration tests
+- GitHub Actions CI with migration validation
 
-👉 [View SubFlow on GitHub](https://github.com/jecas/subflow)
+👉 [Explore SubFlow](https://github.com/jecas/subflow)
 
 ---
 
 ### [RelayForge — Resilient API Integration Service](https://github.com/jecas/relayforge)
 
-Asynchronous integration service demonstrating resilient communication with external API providers through different authentication and request flows.
+Async integration service designed around reliable communication with external API providers.
 
-**Stack:** Python 3.12 · FastAPI · HTTPX · PostgreSQL · SQLAlchemy · Alembic · Docker · Pytest
+**Python 3.12 · FastAPI · HTTPX · PostgreSQL · SQLAlchemy · Alembic · Docker**
 
-**Highlights:**
+**Highlights**
 
-* Provider abstraction with multiple external integrations
-* Multi-step `authorize → token → verify` provider flow
-* API-key-based provider integration
-* Async HTTP communication with HTTPX
-* Configurable timeouts and retry handling
-* Exponential retry delay and `Retry-After` support
-* Provider error normalization
-* Correlation ID generation and propagation
-* Structured JSON logging
-* PostgreSQL verification audit persistence
-* Mock external provider for realistic testing
-* Unit, integration, and full-stack E2E tests
-* Docker Compose environment
-* GitHub Actions CI with migration and Docker validation
+- Multiple providers behind a common abstraction
+- Multi-step `authorize → token → verify` integration flow
+- API-key-based provider integration
+- Async HTTP communication with HTTPX
+- Timeouts, retries, exponential delay, and `Retry-After`
+- Normalized provider errors
+- Correlation ID propagation
+- PostgreSQL audit persistence
+- Deterministic mock providers
+- Unit, integration, and full-stack E2E tests
 
-👉 [View RelayForge on GitHub](https://github.com/jecas/relayforge)
+👉 [Explore RelayForge](https://github.com/jecas/relayforge)
 
 ---
 
-### Event-Driven Python Service
+### [EventPulse — Event-Driven Processing Platform](https://github.com/jecas/eventpulse)
 
-Event-driven backend demonstrating asynchronous processing using RabbitMQ.
+Reliable asynchronous event-processing service built around RabbitMQ and background workers.
 
-**Planned architecture:**
+**Python 3.12 · FastAPI · RabbitMQ · PostgreSQL · Redis · aio-pika · Docker**
 
-`FastAPI → RabbitMQ → Worker → PostgreSQL / Redis → External API`
+**Highlights**
 
-Planned features include retry handling, idempotency, background processing, caching, and automated testing.
+- `202 Accepted` asynchronous event ingestion
+- RabbitMQ publisher and async worker architecture
+- Durable exchanges and queues
+- Delayed retry queue with automatic redelivery
+- Dead-letter queue for exhausted retries
+- Redis-based idempotent processing
+- PostgreSQL event lifecycle persistence
+- External service integration with HTTPX
+- Correlation ID propagation and structured logging
+- Full-stack E2E validation of success, retry, and failure flows
+- GitHub Actions CI with migration and Docker validation
 
-`Coming soon`
+👉 [Explore EventPulse](https://github.com/jecas/eventpulse)
 
 ---
 
 ## 💻 What I Can Help With
 
-* Python backend development
-* FastAPI applications and microservices
-* REST and gRPC API development
-* Third-party API integrations
-* Async Python services
-* Existing Python application debugging
-* API performance and reliability improvements
-* AWS-based backend applications
-* Redis and RabbitMQ integrations
-* Automated testing and CI/CD
+- Python backend development
+- FastAPI applications and microservices
+- REST and gRPC APIs
+- Third-party API integrations
+- Async and event-driven Python services
+- RabbitMQ and Redis integrations
+- Existing Python application debugging
+- Backend reliability and API improvements
+- AWS-based backend applications
+- Automated testing and CI/CD
+
+---
+
+## 🧩 Backend Engineering Focus
+
+Across my projects, I focus on problems that appear in real backend systems:
+
+`API design` · `async processing` · `external integrations` · `retries` · `idempotency` · `message queues` · `caching` · `database migrations` · `observability` · `automated testing`
+
+My portfolio projects intentionally cover different backend architectures:
+
+| Project | Main Engineering Focus |
+|---|---|
+| **SubFlow** | SaaS backend, authentication, subscriptions, payments, caching |
+| **RelayForge** | Third-party integrations, resilience, retries, provider abstraction |
+| **EventPulse** | Event-driven architecture, RabbitMQ, workers, retry queues, DLQ |
 
 ---
 
@@ -123,10 +144,10 @@ Web applications · Booking systems · Business websites · Desktop applications
 
 I'm available for selected freelance projects involving:
 
-**Python · FastAPI · Backend Development · API Integrations · AWS · Automation**
+**Python · FastAPI · Backend Development · API Integrations · AWS · Async Systems**
 
-If you have an existing Python system that needs a new integration, a backend service built from scratch, or a difficult API problem to solve, feel free to get in touch.
+If you need a Python backend service, an external API integration, an asynchronous processing system, or help improving an existing backend application, feel free to get in touch.
 
-📧 Contact: jelena_s7@yahoo.com
+📧 **Contact:** jelena_s7@yahoo.com
 
-🌐 Webnica: https://jecas.github.io/
+🌐 **Webnica:** https://jecas.github.io/
