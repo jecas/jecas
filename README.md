@@ -138,6 +138,8 @@ Web applications · Booking systems · Business websites · Desktop applications
 
 👉 [Visit Webnica](https://jecas.github.io/)
 
+*Webnica is currently available in Serbian, as it primarily serves the local Serbian market.*
+
 ---
 
 ## 🤝 Available for Freelance Projects
